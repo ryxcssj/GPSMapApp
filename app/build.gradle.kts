@@ -1,3 +1,6 @@
+import com.android.builder.files.classpathToRelativeFileSet
+import org.gradle.kotlin.dsl.provider.inClassPathMode
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -32,7 +35,10 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.google.android.gms:play-services-location:19.0.1")
+    implementation ("com.google.android.gms:play-services-maps:18.1.0")
+    implementation ("org.maplibre.gl:android-sdk:10.0.0")
+    implementation ("org.jspecify:jspecify:0.3.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
