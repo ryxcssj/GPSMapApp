@@ -35,14 +35,17 @@ android {
 }
 
 dependencies {
-    implementation ("com.google.android.gms:play-services-location:19.0.1")
-    implementation ("com.google.android.gms:play-services-maps:18.1.0")
     implementation ("org.maplibre.gl:android-sdk:10.0.0")
     implementation ("org.jspecify:jspecify:0.3.0")
+    implementation ("com.google.maps.android:android-maps-utils:2.4.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.play.services.maps)
+    implementation(libs.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
