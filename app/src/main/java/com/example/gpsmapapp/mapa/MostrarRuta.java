@@ -13,13 +13,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MostrarRuta {
-    private final com.example.gpsmapapp.mapa.GoogleMap mMap;
+    private final com.example.gpsmapapp.mapa.GoogleMap map;
     private final Context context;
     private static final String API_KEY = "AIzaSyCeFSAJW8R1hkRYK4Gdnc6HFn_Q2nG1oAg"; // Reemplaza con tu clave
 
     public MostrarRuta(Context context, GoogleMap map) {
         this.context = context;
-        this.mMap = map;
+        this.Map = map;
     }
 
     public void drawRoute(LatLng origin, LatLng destination) {
